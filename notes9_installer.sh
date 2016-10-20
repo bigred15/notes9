@@ -46,6 +46,10 @@ dpkg -b common ibm-notes-9.0.1.i586.deb
 # Install Lotus Notes Client #
 sudo dpkg -i ibm-notes-9.0.1.i586.deb
 
+# Clean Up #
+sudo rm -rf DEBIAN/
+sudo rm -rf common/
+
 # Rebuid Sametime #
 
 dpkg-deb -x ibm-sametime-9.0.1.i586.deb common
